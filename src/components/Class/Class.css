@@ -1,5 +1,16 @@
 .class {
-    width: 100px;
+    display: flex;
+    flex: 0 1 calc(25% - 1em);
+    margin: 1rem 0.25em;
+    justify-content: center;
+    align-items: center;
     height: 100px;
-    background-color: antiquewhite;
+    width: 100px;
+    margin-right: 2em;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #075997;
 }
