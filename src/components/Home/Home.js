@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Class from "../Class/Class";
+import ClassGraphQL from "../Class/ClassGraphQL";
 import "./Home.css";
 import anteater from "../../images/anty.png";
 
@@ -23,7 +24,7 @@ function Home(props) {
     return (
         <div className="body">
             <div className="head">
-                <img src={anteater} />
+                <img src={anteater} alt="Anteater Logo" />
                 <div className="Text">
                     <h1>Favorite Classes List</h1>
                     <form onSubmit={handleSubmit}>
@@ -38,6 +39,11 @@ function Home(props) {
             <div className="my-classes">
                 {favoriteClasses.map((favClasses) => (
                     <Class name={favClasses} key={favClasses}></Class>
+                ))}
+            </div>
+            <div className="my-classes">
+                {favoriteClasses.map((favClasses) => (
+                    <ClassGraphQL name={favClasses} key={favClasses}></ClassGraphQL>
                 ))}
             </div>
         </div>
